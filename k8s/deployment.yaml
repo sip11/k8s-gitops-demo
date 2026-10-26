@@ -12,12 +12,12 @@ spec:
     metadata:
       labels:
         app: my-app
-  spec:
-    containers:
-    - name: my-app
-      image: ghcr.io/sip11/k8s-demo:latest
-      ports:
-      - containerPort: 8080
+    spec:
+      containers:
+      - name: my-app
+        image: ghcr.io/sip11/k8s-demo:latest
+        ports:
+        - containerPort: 8080
 ---
 apiVersion: v1
 kind: Service
@@ -32,3 +32,4 @@ spec:
     nodePort: 30080
   selector:
     app: my-app
+
