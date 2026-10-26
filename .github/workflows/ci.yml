@@ -38,7 +38,7 @@ jobs:
     - name: Update Kubernetes Manifest
       run: |
         git config --global user.name "github-actions[bot]"
-        git config --global user.email "github-actions[bot]@://github.com"
+        git config --global user.email "github-actions[bot]@users.noreply.github.com"
 
         sed -i "s|image: ghcr.io/${{ env.REPO_OWNER }}/k8s-demo:.*|image: ghcr.io/${{ env.REPO_OWNER }}/k8s-demo:${{ env.NEW_TAG }}|g" k8s/deployment.yaml
 
