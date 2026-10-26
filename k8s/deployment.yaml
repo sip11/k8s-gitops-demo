@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
       - name: my-app
-        image: ghcr.io/sip11/k8s-demo:70b5a44
+        image: ghcr.io/sip11/k8s-demo:4fec981
         ports:
         - containerPort: 8080
 ---
